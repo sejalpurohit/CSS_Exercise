@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, san-serif;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline:none;
+    cursor: pointer;
+
+    padding: 20px 40px;
+    border-radius: 8px;
+    color: #212121;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: 0.4s;
+}
+
+.button-1{
+    color:#FFCE00;
+    border:3px solid #FFCE00;
+
+
+}
+
+.button-1:hover{
+    color:azure;
+    background-color: #FFCE00;
+}
+
+
+.button-2{
+    color: blue;
+    border: 3px solid blue;
+    background-image: linear-gradient(to right, transparent 50%, blue 50%);
+    background-size: 200%;
+    background-position: 0%;
+
+
+}
+.button-2:hover{
+    color:white;
+    background-position: 100%;
+}
+
+
+.button-3{
+    color: pink;
+    border: 3px solid pink;
+    background-image: linear-gradient(to bottom, transparent 50%, pink 50%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+}
+
+.button-3:hover{
+    color:white;
+    background-position: 0% 100%;
+}
+
+
+.button-4{
+    color:#fff;
+    background-color: orange;
+    box-shadow: inset 0 -8px 0 0 rgba(0,0,0,0.2);
+    transition: 0ls;
+    text-shadow: 0px 3px rgba(0,0,0,0.2);
+}
+
+.button-4:hover{
+    box-shadow: inset 0 -6px 0 0 rgba(0,0,0,0.2);
+
+}
+
+.button-4:active{
+    box-shadow: 0 -1px 0 0 rgba(0,0,0,0.2);
+    text-shadow: 0px 1px rgba(0,0,0,0.2);
+}
+
+.button-5{
+    position: relative;
+}
+
+
+.button-5 {
+    position: relative;
+  }
+  
+  .button-5:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #212121;
+    border-right: 3px solid #212121;
+    transition: all 0.4s, opacity 0.1s 0.4s;
+    opacity: 0;
+  }
+  
+  .button-5:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-top: 3px solid #212121;
+    border-left: 3px solid #212121;
+    transition: all 0.4s, opacity 0.1s 0.4s;
+    opacity: 0;
+  }
+  
+  .button-5:hover:after, .button-5:hover:before {
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    transition: all 0.4s, opacity 0.1s;
+    opacity: 1;
+  }
