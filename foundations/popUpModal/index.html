@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PopupModal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS PopupModal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="button large popup-button" data-target="#popup-main">
+        Main Popup
+      </div>
+      <div class="button large popup-button" data-target="#popup-secondary">
+        Secondary Popup
+      </div>
+    </div>
+
+
+    <div class="popup" id="popup-main">
+      <div class="popup-overlay popup-button" data-target="#popup-main"></div>
+      <div class="popup-inner">
+        <h2>Poup Main Title</h2>
+        <h3>Main Subtitle</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+          nostrum laborum ut inventore quidem, quisquam assumenda minus aut vel,
+          officia at accusamus similique quia aliquid sit, deserunt beatae quo
+          aperiam?
+        </p>
+        <button class="button popup-button" data-target="#popup-main">Close</button>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-secondary">
+        <div class="popup-overlay popup-button" data-target="#popup-secondary"></div>
+        <div class="popup-inner">
+          <h2>Popup Main Title</h2>
+          <h3>Main Subtitle</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+            nostrum laborum ut inventore quidem, quisquam assumenda minus aut vel,
+            officia at accusamus similique quia aliquid sit, deserunt beatae quo
+            aperiam?
+          </p>
+          <button class="button popup-button" data-target="#popup-secondary">Close</button>
+        </div>
+      </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
